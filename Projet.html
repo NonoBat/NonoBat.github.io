@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-NOLAN BERER INDEX.HTML 04/06/2023 
+NOLAN BERER PROJET.HTML 02/03/2024
 -->
 <html>
 	<head>
@@ -47,111 +47,53 @@ NOLAN BERER INDEX.HTML 04/06/2023
 
 								<h3>KPI</h3>
 								<div class="image"><img src="images/Logo.jpg" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content"></div>
-								<p>Les KPI sont des indicateurs de performance qu'on crée grâce à PowerBi et PowerQuery !</p></br>
-								<p>PowerBi est la partie graphique de notre KPI mais aussi la partie où nous allons calculer les données que nous allons utilisées de la BDD. 
-								Nous avons aussi la possibilité de créée des relations entre des tables de données et si on a mal configuré nos données sur Power Query, 
-								il y a le possible de changer le format de nos données.</p></br>
-								<p>PowerQuery est la partie où nous allons importer notre base de données en se connectant via SQL_serveur, Excel...etc 
-								Dans mon cas, j'utilise SQL Serveur ! Une fois la BDD importée, nous allons sélectionner nos tables et transformer les données si besoin. Le plus long est 
-								lorsque appliquent nos tables à notre PowerBi car toutes les lignes vont charger et j'ai dû attendre de longues minutes même plus d'une heure pour charger 
-								plusieurs millions de lignes.
+								<p>L'objectif est de crée des indicateurs de performances pour que le client ait une visualisation de son stock via des données sur PowerBi!
+									L'avantage est que le client possède les données en direct et peut même choisir les dates à laquelle il veut ses images de stock.
+									De plus, on assure un stock juste et ajoute la possibilité de faire des comparaisons aux mois/années précédentes. 
+								</br>Problème : Nécessite une bonne connaissance de la BDD du client pour chercher les bonnes tables et les différents types d'activités lors de la conception.
 								</p>
 
 							</div>
-						</section>
-							<section class="wrapper style5">
-								<div class="inner">
-									<div class="image"><img src="images/productivite.PNG" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content"></div>
-									<p>Voici une page de KPI ! On peut voir qu'il y a des données avec des calculs, pourcentages, graphiques...etc
-										Pour réussir à avoir ce rendu, il faut effectuer des mesures où nous allons faire nos calculs avec les données que nous avons importées.
-									</p>
-								</div>
-								<div class="inner">
-									<div class="image"><img src="images/f3.PNG" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content"></div>
-									<p>Voici une partie de ma table mesure et dans ces mesures, il y a toutes mes formules/requêtes qui me permettent d'afficher l'information souhaitée.
-									</p>
-								</div>
-								<div class="inner">
-									<div class="image"><img src="images/cum_nb.PNG" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content"></div>
-									<p>Exemple ci-dessus pour calculer le cumul total des réceptions supports sur une année N-1. On utilise également la fonction SAMEPERIODLASTYEAR qui vient 
-									regarder l'année que nous avons sélectionné à l'aide du calendrier que j'ai créé et cela va venir prendre l'année précédente et les données qui lui sont liées.
-									</p>
-								</div>
-								<div class="inner">
-									<div class="image"><img src="images/nb_manquant.PNG" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content"></div>
-									<p>Dans ce cas-là, on va compter le nombre de clés de mission que nous possédons lorsque la valeur de son TPQM est de 1. Ainsi, 
-										chaque mesure à une utilité différente et pour réussir correctement mes calculs, j'ai utilisé un dictionnaire de données !
-									</p>
-								</div>
-								<div class="inner">
-									<div class="image"><img src="images/f5.PNG" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content"></div>
-									<p>Un petit bout nécessaire pour la création d'un calendrier qui devra avoir des relations avec mes autres tables pour que mon KPI soit interactif et réactif !</p>
-								</div>
-								<div class="inner">
-									<div class="image"><img src="images/relation.PNG" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content"></div>
-									<p>Et qu'est ce que les relations ? et bien c'est un diagramme de classe qui va nous permettre de faire les liens entre les tables grâce à leur clé primaire ! 
-									Il faut donc bien que le format de mon calendrier date correspond à celui de chacune de mes tables et cela peut poser des problèmes.
-									</p>
-								</div>
-								<div class="inner">
-									<div class="image"><img src="images/f1.PNG" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content"></div>
-									<p>
-									Enfin voici un autre type de page possible de faire avec PowerBi ! Il faut savoir que j'ai fait 4 KPI d'une dizaine de pages. Cela représente 3 semaines complètes (avec jours fériés) de mon stage
-									si je compte les jours sur cet outil en sachant que je me suis un peu formé à base de tuto youtube et forum. Je n'ai pas de photo PowerQuery car il y principalement
-									que les données et pour soucis de confidentialité, je ne peux pas partager ces données.
-									</p>
-								</div>								
-							</section>
 						</article>
-						<section class="wrapper style5">
-							<div class="inner">
-
-								<h3>PowerApps</h3>
-								<div class="image"><img src="images/Logo.jpg" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content"></div>
-								<p>PowersApps est une plateforme d'office 365 comme PowerBi et permet de crée des applications/formulaires.  </p></br>
-								<p>Dans mon cas d'utilisation, j'ai poussé un peu les outils de PowerApps qui peut créé des applications en no-code mais j'ai dû effectuer les mêmes actions que les forms
-								en C# car j'ai utilisé les bases de données. L'objectif de cette application, est de gérer les litiges des clients pour qu'ils puissent le faire de façon plus intuitif
-								qu'un simple fichier excel à remplir à la main.. .
-								</p></br>
-							</div>
+						<section id="two" class="wrapper alt style2">
+							<section class="spotlight">
+								<div class="image"><img src="images/AppPower.png" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content">
+									<h2>Application PowerApps<br /></h2><p>
+									<p>
+										L'application PowerApps permet de signaler un litige sur un article ou sur un cargaison complète. PowerApps pioche les données directement dans la BDD du client
+										Quand le client selectionne un code client ou un code article, il va avoir une instruction PowerAutomate qui auto incrémente les informations du chargement
+										et les détails des articles. Quand on valide le litige, une ligne avec les données renseignées s'ajoute dans un SharePoint pour pouvoir ensuite utiliser ce 
+										SharePoint sur un PowerBi et faire des statistiques sur les litiges.
+									</p>
+								</div>
+							</section>
 						</section>
 						<section id="two" class="wrapper alt style2">
 							<section class="spotlight">
 								<div class="image"><img src="images/AppPower.png" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content">
-									<h2>Mon application<br /></h2><p>
-									<p>Voici mon application ! Cet écran est celui de l'application utilisé mais il faut savoir que j'ai créé un écran paramètre qui ressource le formulaire qui est envoyé
-									lorsque nous validons la saisie et qui exporte toutes ce que nous avons sélectionné dans un Excel en ligne. Même si maintenant, je suis en train de refaire l'application pour
-									la faire fonctionner sur SharePoint. 
+									<h2>Automatisatiton de facturation<br /></h2><p>
+									<p>
+										Sur PowerBi, j'ai effectuer une automatisatiton de facturation en faisant des calculs via les données du stock et les prix liés. Ce fût complexe car chaque client
+										possède plusieurs activités qui possèdent elles aussi des conditions spécifiques pour certains types d'article.</br>
+										L'objectif principal est un gain de temps par mois pour les personnes chargées de la facturation. Pour certaines les facturations duraient plusieurs jours. Maintenant
+										c'est instantané est a tout moment. De plus, cela ajoute une garantie sur les prix et une facturation juste et sans écart ! 
 									</p>
 								</div>
 							</section>
+						</section>
+						<section id="two" class="wrapper alt style2">
 							<section class="spotlight">
-								<div class="image"><img src="images/AppsPowerDemo.png" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content">
-									<h2>Comment fonctionne-elle ?</h2>
-									<p>L'application est connectée à la base de données et je choisis les tables que je vais utiliser. Ensuite, chaque boîte que vous voyez représente un lien avec ma BDD. On voit qu'ici il y
-									à plus d'informations que sur le screen précédent car j'ai crée des fonctions qui cachent et qui affichent certains éléments uniquement quand on sélectionne une valeur dans mes comboBox. On voit 
-									qu'on a le choix entre choisir un numéro de commande ou de client et cela va trouver tout seul, tous les articles liés à celui-ci qui appartient à une table différente. Pour chercher une donnée
-									d'une autre table, il y a un exemple ci-dessous. Je parlais du lien avec le C# car on utilise ici aussi des :"ComboBox_2.Text". 
+								<div class="image"><img src="https://media.discordapp.net/attachments/949395232993202196/1175070716798976070/image.png" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content"></div>								
+									<h2>Projet La Gourmetise<br /></h2><p>
+									<p>
+										C'est un projet qui a pour objectif de réaliser un concours de boulangerie via une App WEB pour la partie présentation et résultats du concours. 
+										Mais aussi une Application mobile android studio qui permet de voter et consulter les boulangeries inscrites au concours. L'utilisation d'API et des
+										méthodes de sécurité est la principale de ce projet. La Gourmetise est fait en coopération avec Jordan Chevrier. Nous travaillons en mode projet agile 
+										avec des sprints et un suivi constant de nos modifications.
 									</p>
 								</div>
 							</section>
-							<section class="spotlight">
-								<div class="image"><img src="images/appsRequete.PNG" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content">
-									<h2>Exemple requête<br /></h2>
-									<p>Pour chaque "boîte" ayant une valeur dans mon application, il faut faire des formules permettant de rechercher les données que nous voulons soit depuis la BDD soit depuis une "boîte" plus haut.
-										Ici, nous sommes dans ma galerie (Rectangle bleu avec le code article, la désignation...) On voit que je filtre mes résultats en fonction de ma table OPL_DAT lorsque mon code activité est égal
-										à une valeur que j'ai spécifié dans mon écran paramètre et que OPE_NoOE = à mon OPE_NooE de OPE_DAT qui est lié avec grâce à mon OPE_REDO qui est le numéro de commande. Ou, on cherche OPE_NoOE en fonction
-										du CODE_CLI qu'on a sélectionné. Cela me permet de créer une relation entre les deux tables et ainsi avoir les bons articles de mon numéro de commande ou de mon client.
-									</p></br>
-									<p>Comme énoncer plus haut, je suis en train de refaire l'application à SharePoint je mettrais surement cette page à jour quand cela sera terminé ! Cela a déjà
-									du me prendre 2 semaines complètes.
-									</p></br>
-									<p>Ce ne sont pas les seules missions effectuées pendant ce stage, j'ai également fait une extraction de base article, modifier des requêtes SQL, fait du mapping etc... 
-										Je pense cependant ne pas avoir assez de ressources images pour vous les présenter mais elles restent toutes aussi importantes et passionnantes !!!.
-									</p>
-								</div>
-							</section>
-
+						</section>
 
 <!-- Footer -->
 					<footer id="footer">
