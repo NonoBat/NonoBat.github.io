@@ -3995,3 +3995,24 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	.small_img {
+		display: inline-block;
+		margin-right: 100px; /* Espace entre les deux images, ajustez selon vos besoins */
+	}
+
+	.exp-image {
+		width: 200px; /* Remplacez 100px par la taille souhaitée */
+		height: auto; /* Cela garantit que la hauteur est ajustée proportionnellement à la largeur */
+		margin-right: 80px;
+	}
+	
+	.spotlight .compet {
+		text-align: center; /* Centrer le contenu horizontalement */
+	}
+	
+	.spotlight .compet .image {
+		display: inline-block; /* Permet aux images d'être côte à côte */
+		margin: 0 70px; /* Espacement entre les images (ajustez selon vos préférences) */
+	}
+	
