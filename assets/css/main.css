@@ -4006,7 +4006,6 @@ input, select, textarea {
 		height: auto; /* Cela garantit que la hauteur est ajustée proportionnellement à la largeur */
 		margin-right: 80px;
 	}
-	
 	.spotlight .compet {
 		text-align: center; /* Centrer le contenu horizontalement */
 	}
@@ -4015,4 +4014,3 @@ input, select, textarea {
 		display: inline-block; /* Permet aux images d'être côte à côte */
 		margin: 0 70px; /* Espacement entre les images (ajustez selon vos préférences) */
 	}
-	
