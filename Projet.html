@@ -7,9 +7,10 @@ NOLAN BERER PROJET.HTML 02/03/2024
 		<title>Projet </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main2.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Page Wrapper -->
@@ -24,7 +25,7 @@ NOLAN BERER PROJET.HTML 02/03/2024
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Acceuil</a></li>
+											<li><a href="index.html">Accueil</a></li>
 											<li><a href="Contexte.html">Entreprise</a></li>
 											<li><a href="Projet.html">Projet</a></li>
 											<li><a href="interet.html">centre d'intérêt</a></li>
@@ -36,64 +37,87 @@ NOLAN BERER PROJET.HTML 02/03/2024
 					</header>
 
 				<!-- Main -->
-					<article id="main">
-						<header>
-							<h2>Projets/Missions</h2>
-							<p>Voici un récapitulatif de mes différentes missions effectuées durant mon stage !</p>
-						</header>
-						</article>
-						<section id="two" class="wrapper alt style2">
+				<article id="main">
+					<header>
+						<h2>Projets/Missions</h2>
+						<p>Voici un récapitulatif de mes différents projets/missions !</p>
+					</header>
+					<section id="two" class="wrapper alt style2">
+						<div class="spotlight-container">
 							<section class="spotlight">
-								<div class="image"><img src="images/powerBi.jpg" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content">
-									<h2>indicateurs de performances<br /></h2><p>
-									<p>
-										L'objectif est de crée des indicateurs de performances pour que le client ait une visualisation de son stock via des données sur PowerBi!
-									L'avantage est que le client possède les données en direct et peut même choisir les dates à laquelle il veut ses images de stock.
-									De plus, on assure un stock juste et ajoute la possibilité de faire des comparaisons aux mois/années précédentes. 
-								</br>Problème : Nécessite une bonne connaissance de la BDD du client pour chercher les bonnes tables et les différents types d'activités lors de la conception.
-									</p><a href="projets/kpi.html" class="button">En savoir plus !</a>
+								<div class="spotlight-box">
+									<div class="image"><img src="images/powerBi.jpg" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" class="spotlight-image" /></div>
+									<div class="content">
+										<h2>indicateurs de performances<br /></h2>
+										<p class="spotlight-text">
+											création d'indicateurs de performances sur PowerBi pour le service logistique. Ces indicateurs permettent de suivre les performances des différents sites de production.
+										</p>
+										<a href="projets/kpi.html" class="button spotlight-button">En savoir plus !</a>
+									</div>
 								</div>
 							</section>
-						</section>
-						<section id="two" class="wrapper alt style2">
 							<section class="spotlight">
-								<div class="image"><img src="images/logoPowApps.png" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content">
-									<h2>Application PowerApps<br /></h2><p>
-									<p>
-										L'application PowerApps permet de signaler un litige sur un article ou sur un cargaison complète. PowerApps pioche les données directement dans la BDD du client
-										Quand le client selectionne un code client ou un code article, il va avoir une instruction PowerAutomate qui auto incrémente les informations du chargement
-										et les détails des articles. Quand on valide le litige, une ligne avec les données renseignées s'ajoute dans un SharePoint pour pouvoir ensuite utiliser ce 
-										SharePoint sur un PowerBi et faire des statistiques sur les litiges.
-									</p><a href="projets/powerApps.html" class="button">En savoir plus !</a>
+								<div class="spotlight-box">
+									<div class="image"><img src="images/logoPowApps.png" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" class="spotlight-image" /></div>
+									<div class="content">
+										<h2>Application PowerApps<br/></h2>
+										<p class="spotlight-text">
+											Signaler un litige sur un article ou sur un cargaison complète en quelques clics. C'est ce que j'ai réalisé sur PowerApps. L'application est simple d'utilisation et permet de gagner du temps pour les personnes chargées de la gestion des litiges.
+										</p>
+										<a href="projets/powerApps.html" class="button spotlight-button">En savoir plus !</a>
+									</div>
 								</div>
 							</section>
-						</section>
-						<section id="two" class="wrapper alt style2">
 							<section class="spotlight">
-								<div class="image"><img src="images/powerBi.jpg" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content">
-									<h2>Automatisatiton de facturation<br /></h2><p>
-									<p>
-										Sur PowerBi, j'ai effectuer une automatisatiton de facturation en faisant des calculs via les données du stock et les prix liés. Ce fût complexe car chaque client
-										possède plusieurs activités qui possèdent elles aussi des conditions spécifiques pour certains types d'article.</br>
-										L'objectif principal est un gain de temps par mois pour les personnes chargées de la facturation. Pour certaines les facturations duraient plusieurs jours. Maintenant
-										c'est instantané est a tout moment. De plus, cela ajoute une garantie sur les prix et une facturation juste et sans écart ! 
-									</p><a href="projets/facturation.html" class="button">En savoir plus !</a>
+								<div class="spotlight-box">
+									<div class="image"><img src="images/powerBi.jpg" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" class="spotlight-image" /></div>
+									<div class="content">
+										<h2>Automatisation de facturation<br /></h2>
+										<p class="spotlight-text">
+											Automatisatiton de facturation pour les clients de l'entreprise. L'objectif est de gagner du temps pour les collaborateurs en automatisant la facturation des clients.
+										</p>
+										<a href="projets/facturation.html" class="button spotlight-button">En savoir plus !</a>
+									</div>
 								</div>
 							</section>
-						</section>
-						<section id="two" class="wrapper alt style2">
 							<section class="spotlight">
-								<div class="image"><img src="images/pain.png" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" /></div><div class="content">
-									<h2>Projet La Gourmetise<br /></h2><p>
-									<p>
-										C'est un projet qui a pour objectif de réaliser un concours de boulangerie via une App WEB pour la partie présentation et résultats du concours. 
-										Mais aussi une Application mobile android studio qui permet de voter et consulter les boulangeries inscrites au concours. L'utilisation d'API et des
-										méthodes de sécurité est la principale de ce projet. La Gourmetise est fait en coopération avec Jordan Chevrier. Nous travaillons en mode projet agile 
-										avec des sprints et un suivi constant de nos modifications.
-									</p><a href="https://github.com/Lamikad0v2/Gourmetise" class="button">En savoir plus !</a>
+								<div class="spotlight-box">
+									<div class="image"><img src="images/pain.png" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" class="spotlight-image" /></div>
+									<div class="content">
+										<h2>Projet La Gourmetise<br /></h2>
+										<p class="spotlight-text">
+											Concours de boulangerie utilisation d'une application WEB & Mobile. J'ai réalisé ce projet en équipe de 2 personnes.
+										</p>
+										<a href="projets/gourmetise.html" class="button spotlight-button">En savoir plus !</a>
+									</div>
 								</div>
 							</section>
-						</section>
+							<section class="spotlight">
+								<div class="spotlight-box">
+									<div class="image"><img src="images/multiburoLogo.png" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" class="spotlight-image" /></div>
+									<div class="content">
+										<h2>Projet Multiburo<br /></h2>
+										<p class="spotlight-text">
+											Espace de réservation de postes pour le travail (ex: OpenSpace) 
+										</p>
+										<a href="projets/multiburo.html" class="button spotlight-button">En savoir plus !</a>
+									</div>
+								</div>
+							</section>
+							<section class="spotlight">
+								<div class="spotlight-box">
+									<div class="image"><img src="images/logoScrabll.jpg" onclick="window.open(this.src,'_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=500px, height=500px');" alt="" class="spotlight-image" /></div>
+									<div class="content">
+										<h2>WinScrabble<br /></h2>
+										<p class="spotlight-text">
+											Jeu de scrabble sur un forms C#. premier projet.
+										</p>
+										<a href="projets/WinScrabbl.html" class="button spotlight-button">En savoir plus !</a>
+									</div>
+								</div>
+							</section>
+						</div>
+					</section>
 
 <!-- Footer -->
 					<footer id="footer">
